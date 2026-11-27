@@ -1,0 +1,60 @@
+{
+  "name": "agent-typescript-lsp",
+  "version": "0.0.0-development",
+  "description": "TypeScript language server launcher for coding agents, any TypeScript version including 7",
+  "keywords": [
+    "lsp",
+    "language-server",
+    "typescript",
+    "typescript-7",
+    "tsgo",
+    "claude-code",
+    "copilot",
+    "coding-agent",
+    "apm"
+  ],
+  "homepage": "https://github.com/obarcelonap/agent-typescript-lsp#readme",
+  "bugs": {
+    "url": "https://github.com/obarcelonap/agent-typescript-lsp/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/obarcelonap/agent-typescript-lsp.git"
+  },
+  "license": "Apache-2.0",
+  "type": "module",
+  "bin": {
+    "agent-typescript-lsp": "dist/agent-typescript-lsp.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "format": "ultracite fix",
+    "lint": "ultracite check",
+    "prepare": "husky",
+    "test": "vitest run --project unit",
+    "test:e2e": "npm run build && vitest run --project e2e"
+  },
+  "lint-staged": {
+    "*": "biome check --write --no-errors-on-unmatched --files-ignore-unknown=true"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.6.9",
+    "@types/node": "^26.6.11",
+    "husky": "^9.1.7",
+    "lint-staged": "^17.6.2",
+    "typescript": "^7.0.2",
+    "typescript-language-server": "^6.1.0",
+    "typescript5": "npm:typescript@^5.9.3",
+    "ultracite": "^8.3.1",
+    "vitest": "^5.1.2"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "publishConfig": {
+    "provenance": true
+  }
+}

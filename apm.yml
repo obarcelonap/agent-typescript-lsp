@@ -1,0 +1,18 @@
+name: agent-typescript-lsp
+version: 0.0.0
+description: TypeScript language server for agents, any TypeScript version including 7
+license: Apache-2.0
+dependencies:
+  lsp:
+    - name: typescript
+      command: npx
+      args: [ "-y", "agent-typescript-lsp@latest", "--stdio" ]
+      extensionToLanguage:
+        ".ts": typescript
+        ".tsx": typescriptreact
+        ".js": javascript
+        ".jsx": javascriptreact
+        ".mts": typescript
+        ".cts": typescript
+        ".mjs": javascript
+        ".cjs": javascript
