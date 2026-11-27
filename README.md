@@ -1,5 +1,8 @@
 # agent-typescript-lsp
 
+[![npm](https://img.shields.io/npm/v/agent-typescript-lsp)](https://www.npmjs.com/package/agent-typescript-lsp)
+[![CI](https://github.com/obarcelonap/agent-typescript-lsp/actions/workflows/ci.yml/badge.svg)](https://github.com/obarcelonap/agent-typescript-lsp/actions/workflows/ci.yml)
+
 TypeScript/JavaScript language server launcher for coding agents. Works with any TypeScript version, including
 TypeScript 7:
 
